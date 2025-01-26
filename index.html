@@ -37,20 +37,37 @@
             transition: background-color 0.3s ease;
         }
         .game-button:hover {
-            background-color: #45a049;
+            background-color: #0919fd;
+        }
+        .fullscreen-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 150px;
+            height: 50px;
+            font-size: 16px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .fullscreen-button:hover {
+            background-color: #e64a19;
         }
     </style>
 </head>
 <body>
-
     <h1>Unblocked Games</h1>
+    <button class="fullscreen-button" onclick="toggleFullscreen()">Fullscreen</button>
     <div class="button-container">
-        <!-- Add Buttons here -->
-        <button class="game-button" onclick="window.location.href='1v1lol/index.html'">1V1.LOL</button>
-        <button class="game-button" onclick="window.location.href='1v1space/index.html'">1v1space</button>
-        <button class="game-button" onclick="window.location.href='among-us/index.html'">Among Us</button>
-        <button class="game-button" onclick="window.location.href='angry-birds/index.html'">Angry Birds</button>
-        <button class="game-button" onclick="window.location.href='backflip-dive-3d/index.html'">Backflip Dive 3D</button>
+        <!-- Game Buttons -->
+        <button class="game-button" onclick="window.location.href='1v1lol/index.html'"onclick="toggleFullscreen()">1V1.LOL</button>
+        <button class="game-button" onclick="window.location.href='1v1space/index.html'"onclick="toggleFullscreen()">1v1space</button>
+        <button class="game-button" onclick="window.location.href='among-us/index.html'"onclick="toggleFullscreen()">Among Us</button>
+        <button class="game-button" onclick="window.location.href='angry-birds/index.html'"onclick="toggleFullscreen()">Angry Birds</button>
+        <button class="game-button" onclick="window.location.href='backflip-dive-3d/index.html'"onclick="toggleFullscreen()">Backflip Dive 3D</button>
         <button class="game-button" onclick="window.location.href='basketball-io/index.html'">Basketball.io</button>
         <button class="game-button" onclick="window.location.href='bitlife/index.html'">Bitlife</button>
         <button class="game-button" onclick="window.location.href='bloonstd/index.html'">BallonsTD</button>
@@ -96,7 +113,98 @@
         <button class="game-button" onclick="window.location.href='slope/index.html'">Slope</button>
         <button class="game-button" onclick="window.location.href='sm64/index.html'">Super Mario 64</button>
         <button class="game-button" onclick="window.location.href='sonic-the-hedgehog/src/index.html'">Sonic The Hedehog</button>
+        <button class="game-button" onclick="window.location.href='soundboard/index.html'">Soundboard</button>
+        <!-- Add other buttons as necessary -->
+      <button class="game-button" onclick="window.location.href='solitaire/index.html'">Solitaire</button>
+        <button class="game-button" onclick="window.location.href='stickman/index.html'">Stickman</button>
+        <button class="game-button" onclick="window.location.href='subway-surfers/index.html'">Subway Surfers</button>
+        <button class="game-button" onclick="window.location.href='super-mario-maker-online/index.html'">Super Mario Maker Online</button>
+        <button class="game-button" onclick="window.location.href='superhero-io/index.html'">Superhero.io</button>
+        <button class="game-button" onclick="window.location.href='superhot/index.html'">Superhot</button>
+        <button class="game-button" onclick="window.location.href='temple-run-2/index.html'">Temple Run 2</button>
+        <button class="game-button" onclick="window.location.href='tetris/index.html'">Tetris</button>
+        <button class="game-button" onclick="window.location.href='the-impossible-quiz/index.html'">The Impossible Quiz</button>
+        <button class="game-button" onclick="window.location.href='the-impossible-quiz-2/index.html'">The Impossible Quiz 2</button>
+        <button class="game-button" onclick="window.location.href='theheist/index.html'">The Heist</button>
+        <button class="game-button" onclick="window.location.href='time-shooter-3/index.html'">Time Shooter 3</button>
+        <button class="game-button" onclick="window.location.href='townscaper/index.html'">Townscaper</button>
+        <button class="game-button" onclick="window.location.href='underrun/index.html'">Underrun</button>
+        <button class="game-button" onclick="window.location.href='wordle/index.html'">Wordle</button>
+        <button class="game-button" onclick="window.location.href='you-are-bezos/index.html'">You are Bezos</button>
+        <button class="game-button" onclick="window.location.href='zig-zag/index.html'">Zig Zag</button>
+        <button class="game-button" onclick="window.location.href='zombocalypse/index.html'">Zombie Apocalypse</button>
+        <button class="game-button" onclick="window.location.href='zombs-royale/index.html'">Zombs Royale</button>
+        <button class="game-button" onclick="window.location.href='2048/index.html'">2048</button>
+        <button class="game-button" onclick="window.location.href='age-of-war/index.html'">Age of War</button>
+        <button class="game-button" onclick="window.location.href='alien-invaders-io/index.html'">Alien Invaders.io</button>
+        <button class="game-button" onclick="window.location.href='anti-terrorist-rush/index.html'">Anti Terrorist Rush</button>
+        <button class="game-button" onclick="window.location.href='arcade-wizard/index.html'">Arcade Wizard</button>
+        <button class="game-button" onclick="window.location.href='asciispace/index.html'">Asciispace</button>
+        <button class="game-button" onclick="window.location.href='asteroids/index.html'">Asteroids</button>
+        <button class="game-button" onclick="window.location.href='astray/index.html'">Astray</button>
+        <button class="game-button" onclick="window.location.href='awesome-tanks-2/index.html'">Awesome Tanks 2</button>
+        <button class="game-button" onclick="window.location.href='backcountry/index.html'">Backcountry</button>
+        <button class="game-button" onclick="window.location.href='backrooms/index.html'">Backrooms</button>
+        <button class="game-button" onclick="window.location.href='bad-ice-cream/index.html'">Bad Ice Cream</button>
+        <button class="game-button" onclick="window.location.href='bad-ice-cream-2/index.html'">Bad Ice Cream 2</button>
+        <button class="game-button" onclick="window.location.href='bad-ice-cream-3/index.html'">Bad Ice Cream 3</button>
+        <button class="game-button" onclick="window.location.href='baldis-basics/index.html'">Baldis Basics</button>
+        <button class="game-button" onclick="window.location.href='basket-bros-io/index.html'">BasketBros.io</button>
+        <button class="game-button" onclick="window.location.href='basketball-legends-2020/index.html'">Basketball Legends 2020</button>
+        <button class="game-button" onclick="window.location.href='basketball-stars/index.html'">Basketball Stars</button>
+        <button class="game-button" onclick="window.location.href='battleforgondor/index.html'">Battle For Gondor</button>
+        <button class="game-button" onclick="window.location.href='bigredbutton/index.html'">Bigred Button</button>
+        <button class="game-button" onclick="window.location.href='binding-of-isaac/index.html'">Binding of isaac</button>
+        <button class="game-button" onclick="window.location.href='blackholesquare/index.html'">Black hole Square</button>
+        <button class="game-button" onclick="window.location.href='blackknight/index.html'">Black Knight</button>
+        <button class="game-button" onclick="window.location.href='blocky-snakes/index.html'">Blocky Snakes</button>
+        <button class="game-button" onclick="window.location.href='breakout/index.html'">Breakout</button>
+        <button class="game-button" onclick="window.location.href='burning-man-2/index.html'">Burning Man 2</button>
+        <button class="game-button" onclick="window.location.href='canyondefense/index.html'">Canyon Defence</button>
+        <button class="game-button" onclick="window.location.href='cars-simulator/index.html'">Car simulator</button>
+        <button class="game-button" onclick="window.location.href='cell-machine/index.html'">Cell Machine</button>
+        <button class="game-button" onclick="window.location.href='championarcher/index.html'">Champion archer</button>
+        <button class="game-button" onclick="window.location.href='chrome-dino/index.html'">Chrome Dino</button>
     </div>
+  <!-- Apps Section -->
+         <div class="section">
+            <h2>Unblocked Apps</h2>
+            <div class="button-container">
+                <button class="apps-button" onclick="window.location.href='https://www.youtube.com'">YouTube</button>
+                <button class="apps-button" onclick="window.location.href='https://www.google.com'">Google</button>
+                <button class="apps-button" onclick="window.location.href='https://vscode.dev/'">VS Code</button>
+                <button class="apps-button" onclick="window.location.href='https://chat.openai.com/'">ChatGPT</button>
+                <button class="apps-button" onclick="window.location.href='https://www.nvidia.com/en-us/geforce-now/'">GeForce NOW</button>
 
+    <script>
+        // Handle Fullscreen Toggle
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    alert(`Error attempting to enable fullscreen mode: ${err.message}`);
+                });
+            }
+        }
+
+        // Ensure Fullscreen is Retained on Navigation
+        function navigateTo(url) {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            }
+            window.location.href = url;
+        }
+
+        // Disable ESC Key for Exiting Fullscreen
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                event.preventDefault(); // Prevent exiting fullscreen
+            }
+            if (event.key === '0') {
+                document.exitFullscreen().catch(err => {
+                    console.error(`Error exiting fullscreen: ${err.message}`);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
